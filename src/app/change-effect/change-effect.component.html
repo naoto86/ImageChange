@@ -1,0 +1,8 @@
+<app-image  [effectName]="selectedEffectName" [effectClass]="selectedEffectClass"></app-image>
+<ul class="effects">
+  <li *ngFor="let effect of effects"
+    [class.selected]="effect === selectedEffect"
+    (click)="onSelect(effect)">
+    <span class="badge">{{effect.id}}</span> {{effect.name}}
+  </li>
+</ul>

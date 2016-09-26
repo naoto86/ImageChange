@@ -1,3 +1,4 @@
+@media screen and ( min-width:480px ){
 .imgArea{
     float:left;
     margin-left:20%; 
@@ -18,15 +19,21 @@ img{
 position:absolute;
 width: 100vh;
 }
+}
 /*スマホ用*/
 @media screen and ( max-width:479px ){
   .imgArea{
-    margin-left:0%;
-    width:100%;
+    text-align: center;
+    margin-left: 0%;
   }
   .photoFlame{
-    width:76vh;
-    height:55vh;
+    box-sizing: border-box;
+    width:calc(95vmin - 60px);
+    height:calc(95vmin - 60px);
+    margin: 0 auto;
+    text-align: center;
+    border: medium #ff0000 dotted;
+    overflow: auto;
   }
   img{
     width: 80vh;

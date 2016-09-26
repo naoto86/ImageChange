@@ -34,10 +34,6 @@
     background-color: #DDD;
     left: .1em;
 }
-.effects .text {
-    position: relative;
-    top: -3px;
-}
 .effects .badge {
     display: inline-block;
     font-size: small;
@@ -55,28 +51,27 @@
 /*スマホ用*/
 @media screen and ( max-width:479px ){
 .effects {
-    margin: 0 0 2em 0;
+    margin:0.1%;
     list-style-type: none;
     width:100%;
     padding: 0;
     float:left;
     box-sizing: border-box;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     border: medium #ff0000 dotted;
+    overflow-x: scroll;
+    overflow-y:hidden;
+    white-space:nowrap;
 }
 .effects li {
-    cursor: pointer;
-    float:left;
+    display:inline-block; 
     position: relative;
-    left: 0;
     background-color: #EEE;
-    margin: 1%;
-    padding: 1%;
-    font-size: small;
-    font-weight:bold; 
+    margin: 1.5%;
+    padding: 9% 2% 2% 2%;
+    width: 13vh;
+    height: 10vh;
+    font-weight:bold;
+    text-align: center;
     border-radius: 4px;
 }
 .effects li.selected:hover {
@@ -87,10 +82,6 @@
     color: #607D8B;
     background-color: #DDD;
     left: .1em;
-}
-.effects .text {
-    position: relative;
-    top: -3px;
 }
 .effects .badge {
 display: none;

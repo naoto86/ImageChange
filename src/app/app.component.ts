@@ -7,5 +7,5 @@ import { ChangeEffectComponent } from './change-effect/change-effect.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '画像にエフェクトをかける';
+  title = '画像にエフェクトをかけるよ';
 }
